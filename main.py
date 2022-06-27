@@ -3,7 +3,6 @@ import machine, time, ssd1306
 #pin25 = machine.Pin(25, machine.Pin.OUT)
 # LED on board is connected to pin25
 
-
 i2c = machine.I2C(1, sda=machine.Pin(26), scl=machine.Pin(27))
 display = ssd1306.SSD1306_I2C(128, 64, i2c)
 
